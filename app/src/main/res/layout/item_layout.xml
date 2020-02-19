@@ -37,6 +37,20 @@
             android:textStyle="bold"
             android:id="@+id/profile_name"
             android:layout_alignParentTop="true"
-            android:text="Nice beer"/>
+            android:text="Beer name"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:textSize="12sp"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="3dp"
+            android:layout_below="@+id/profile_name"
+            android:layout_marginTop="2dp"
+            android:text="Beer type"/>
+    </RelativeLayout>
+
+    </LinearLayout>
 
 </layout>
