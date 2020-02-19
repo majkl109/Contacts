@@ -21,8 +21,11 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             app:civ_border_width="1dp"
+            app:civ_border_color="FF000000"
             android:layout_marginLeft="15dp"
-            android:id="@+id/profile_pic"/>
+            android:id="@+id/profile_pic"
+            android:src="@drawable/buraBrew"
+            />
     
     <RelativeLayout
         android:layout_width="match_parent"
@@ -37,7 +40,7 @@
             android:textStyle="bold"
             android:id="@+id/profile_name"
             android:layout_alignParentTop="true"
-            android:text="Beer name"/>
+            android:text="@{beer.name}"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -48,7 +51,7 @@
             android:layout_marginBottom="3dp"
             android:layout_below="@+id/profile_name"
             android:layout_marginTop="2dp"
-            android:text="Beer type"/>
+            android:text="@{beer.type}"/>
     </RelativeLayout>
 
     </LinearLayout>
