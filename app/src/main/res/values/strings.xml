@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">Contacts</string>
+
+    <string-array name="names">
+        <item>Osjecko</item>
+        <item>Neposlusna</item>
+        <item>Ozujsko</item>
+        <item>OzujskoAmber</item>
+        <item>Pan</item>
+    </string-array>
+
+    <string-array name="types">
+        <item>Lager</item>
+        <item>Craft</item>
+        <item>Lager</item>
+        <item>Craft</item>
+        <item>Lager</item>
+    </string-array>
 </resources>
