@@ -16,7 +16,7 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
 
     private ActivityMainBinding mainBinding;
-    private R
+    private RecycleAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +25,8 @@ public class MainActivity extends AppCompatActivity {
         mainBinding = DataBindingUtil.setContentView(this, R.layout.activity_main);
         mainBinding.recyclerView.setLayoutManager(new LinearLayoutManager(this));
         mainBinding.recyclerView.setHasFixedSize(true);
-
+        adapter = new RecycleAdapter(this, prepareBeer());
+        mainBinding.recyclerView.setAdapter(adapter);
     }
     private List<Beer> prepareBeer(){
 
